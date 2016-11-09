@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mastermind</string>
+    <string name="defaite">Défaite !</string>
+    <string name="victoire">Victoire !</string>
+    <string name="rejouer">Rejouer ?</string>
+    <string name="menu">Menu principal</string>
+</resources>
