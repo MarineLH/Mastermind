@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">MasterBrain</string>
+    <string name="title">MasterBrain</string>
+    <string name="jouer">JOUER</string>
+    <string name="regles">Règles</string>
+    <string name="retour">Menu</string>
+    <string name="createurs">Créé par : \n Marine LHUILLIER - Clément ROUIL - François MONTAGNE</string>
+
+    <string name="J1vsIA">J1 vs IA</string>
+    <string name="J1vsJ2">J1 vs J2</string>
+
+    <string name="regles_objectif">
+        \n\n
+        Objectif :
+        \n\n
+        Trouvez la combinaison de couleurs gagnante !
+        \n
+        \n
+        Comment jouer :
+        \n\n
+        A chaque tour,
+        choisissez une combinaison de 4 couleurs, validez votre sélection et le jeu vous indiquera si celle-ci est correcte.
+        \n
+        \n
+        3 possibilités :
+        \n\n
+        - La couleur n\'est pas correcte : l\'indice annoncera une bille vide \n
+        - La couleur est correcte mais mal placée : l\'indice annoncera une bille blanche \n
+        - La couleur est correcte et bien placée : l\'indice annoncera une bille noire \n
+
+
+
+
+
+    </string>
+    <string name="quitter">Quitter</string>
+
+</resources>

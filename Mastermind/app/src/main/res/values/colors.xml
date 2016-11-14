@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#08155e</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="colorPerso">#33ff6d</color>
+
+    <color name="billeVide">#BDBDBD</color>
+
+    <color name="billeBlanche">#FFFFFF</color>
+    <color name="billeNoire">#000000</color>
+
+    <color name="billeRouge">#ff0004</color>
+    <color name="billeBleue">#003cff</color>
+    <color name="billeVerte">#009914</color>
+    <color name="billeOrange">#ff5900</color>
+    <color name="billeJaune">#ffe100</color>
+    <color name="billeRose">#ff00b7</color>
+
+
+
+</resources>

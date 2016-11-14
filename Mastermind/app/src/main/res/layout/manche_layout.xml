@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:stretchColumns="0,1"
+        android:id="@+id/resultats_layout"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/resultats1_layout">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/resultat1_imageView"
+                android:src="@drawable/bille"
+                android:tint="@color/billeVide"
+                android:background="@android:color/transparent"
+                android:padding="2dp"
+                android:cropToPadding="false"
+                android:layout_margin="2dp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/resultat2_imageView"
+                android:src="@drawable/bille"
+                android:tint="@color/billeVide"
+                android:background="@android:color/transparent"
+                android:padding="2dp"
+                android:cropToPadding="false"
+                android:layout_margin="2dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/resultats2_layout">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/resultat3_imageView"
+                android:src="@drawable/bille"
+                android:tint="@color/billeVide"
+                android:background="@android:color/transparent"
+                android:padding="2dp"
+                android:layout_margin="2dp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/resultat4_imageView"
+                android:src="@drawable/bille"
+                android:tint="@color/billeVide"
+                android:background="@android:color/transparent"
+                android:padding="2dp"
+                android:layout_margin="2dp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/manche_layout"
+        android:rowCount="1"
+        android:columnCount="7"
+        android:columnOrderPreserved="false"
+        android:useDefaultMargins="true"
+        android:gravity="center|center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/numeroManche_textView"
+        android:layout_toRightOf="@+id/resultats_layout"
+        android:layout_toEndOf="@+id/resultats_layout"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/bille1_imageBoutton"
+
+            android:background="@android:color/transparent"
+            android:tint="@color/billeVide"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/bille" />
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/bille2_imageBoutton"
+            android:background="@android:color/transparent"
+            android:tint="@color/billeVide"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/bille" />
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/bille3_imageBoutton"
+            android:background="@android:color/transparent"
+            android:tint="@color/billeVide"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/bille" />
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/bille4_imageBoutton"
+            android:background="@android:color/transparent"
+            android:tint="@color/billeVide"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/bille" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/numeroManche_textView"
+        android:gravity="center"
+        android:text="1"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="4dp"
+        android:textStyle="normal|bold"
+        android:textSize="14sp" />
+</LinearLayout>

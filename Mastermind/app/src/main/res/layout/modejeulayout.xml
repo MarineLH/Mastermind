@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:background="@android:color/background_dark"></LinearLayout>
+
+    <Button
+        android:text="@string/J1vsIA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/J1vsIA"
+        android:fontFamily="monospace"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:background="@android:color/background_dark"
+        android:tag="3"
+        android:onClick="click"
+        android:textStyle="normal|bold" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@android:color/background_dark"></LinearLayout>
+
+    <Button
+        android:text="@string/J1vsJ2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/J1vsJ2"
+        android:fontFamily="monospace"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:background="@android:color/background_dark"
+        android:tag="4"
+        android:onClick="click"
+        android:textStyle="normal|bold" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_dark"></LinearLayout>
+</LinearLayout>

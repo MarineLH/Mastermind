@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/manches_listView"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/manche_layout"
+        android:stackFromBottom="true"
+        android:divider="#b9b7b7"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/manche_layout"
+        android:rowCount="1"
+        android:columnCount="7"
+        android:layout_alignParentTop="false"
+        android:columnOrderPreserved="false"
+        android:useDefaultMargins="true"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:elevation="10dp">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/billeBleue_imageButton"
+            android:src="@drawable/bille"
+            android:layout_gravity="fill_vertical"
+            android:gravity="center|center_horizontal"
+            android:background="@android:color/transparent"
+            android:tint="@color/billeBleue"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/billeJaune_imageButton"
+            android:src="@drawable/bille"
+            android:background="@android:color/transparent"
+            android:tint="@color/billeJaune"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/billeOrange_imageButton"
+            android:src="@drawable/bille"
+            android:gravity="center|center_horizontal"
+            android:background="@android:color/transparent"
+            android:tint="@color/billeOrange"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/billeRose_imageButton"
+            android:src="@drawable/bille"
+            android:gravity="center|center_horizontal"
+            android:background="@android:color/transparent"
+            android:tint="@color/billeRose"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/billeRouge_imageButton"
+            android:src="@drawable/bille"
+            android:gravity="center|center_horizontal"
+            android:background="@android:color/transparent"
+            android:tint="@color/billeRouge"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/billeVerte_imageButton"
+            android:src="@drawable/bille"
+            android:gravity="center|center_horizontal"
+            android:background="@android:color/transparent"
+            android:tint="@color/billeVerte"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+</RelativeLayout>
