@@ -1,5 +1,6 @@
 package com.example.marine.mastermind;
 
+import android.net.sip.SipSession;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,6 +18,8 @@ public class PlayIaActivity extends AppCompatActivity implements View.OnClickLis
     private ListView manches_listView;
     private Manche mancheActuelle;
     private List<Manche> manches;
+    private RoundAdapter adapter;
+    private SipSession.Listener listener;
 
 
 
@@ -30,6 +33,17 @@ public class PlayIaActivity extends AppCompatActivity implements View.OnClickLis
         initMancheListView();
 
         setListeners();
+
+    }
+
+    public PlayIaActivity(SipSession.Listener listener)
+    {
+        this.listener = listener;
+
+        /*try {
+            mancheActuelle = getMancheById(manche);
+        }
+*/
 
     }
 
@@ -84,8 +98,21 @@ public class PlayIaActivity extends AppCompatActivity implements View.OnClickLis
     {
         manches_listView = (ListView)findViewById(R.id.manches_listView);
 
+        adapter = new RoundAdapter(this);
+        manches_listView.setAdapter(adapter);
+
+        initDataList();
     }
 
+    private void initDataList()
+    {
+        adapter.clear();
+        for (Manche manche : viewModel.getManches())
+        {
+            adapter.insert(manche, 0);
+        }
+        adapter.notifyDataSetChanged();
+    }
 
     private void setListeners() {
         ImageButton billeBleue = (ImageButton) findViewById(R.id.billeBleue_imageButton);
